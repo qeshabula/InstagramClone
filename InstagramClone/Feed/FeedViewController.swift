@@ -26,6 +26,10 @@ class FeedViewController: UIViewController {
             FeedStoriesItemCellInfo(image: UIImage(named: "dog")!, username: "user123", isAddButtonVisible: false, isNewStory: false),
             FeedStoriesItemCellInfo(image: UIImage(named: "dog")!, username: "user123", isAddButtonVisible: false, isNewStory: false)
         ]),
+        .post(FeedPostItemInfo(userImage: UIImage(named: "dog")!, username: "Some_dog", postSubtitle: "Sponsored", postImage: UIImage(named: "dog")!, numberOfLikes: 431, comment: CommentShortInfo(username: "Another_dog", commentText: "Tupoi it"))),
+        .post(FeedPostItemInfo(userImage: UIImage(named: "dog")!, username: "Some_dog", postSubtitle: "Sponsored", postImage: UIImage(named: "dog")!, numberOfLikes: 431, comment: CommentShortInfo(username: "Another_dog", commentText: "Tupoi it"))),
+        .post(FeedPostItemInfo(userImage: UIImage(named: "dog")!, username: "Some_dog", postSubtitle: "Sponsored", postImage: UIImage(named: "dog")!, numberOfLikes: 431, comment: CommentShortInfo(username: "Another_dog", commentText: "Tupoi it"))),
+        .post(FeedPostItemInfo(userImage: UIImage(named: "dog")!, username: "Some_dog", postSubtitle: "Sponsored", postImage: UIImage(named: "dog")!, numberOfLikes: 431, comment: CommentShortInfo(username: "Another_dog", commentText: "Tupoi it"))),
         .post(FeedPostItemInfo(userImage: UIImage(named: "dog")!, username: "Some_dog", postSubtitle: "Sponsored", postImage: UIImage(named: "dog")!, numberOfLikes: 431, comment: CommentShortInfo(username: "Another_dog", commentText: "Tupoi it")))
     ]
 }
