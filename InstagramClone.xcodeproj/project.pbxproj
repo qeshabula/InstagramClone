@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		AF89E816296DBEC40000C22F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89E815296DBEC40000C22F /* AppDelegate.swift */; };
 		AF89E818296DBEC40000C22F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89E817296DBEC40000C22F /* SceneDelegate.swift */; };
-		AF89E81A296DBEC40000C22F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89E819296DBEC40000C22F /* ViewController.swift */; };
-		AF89E81D296DBEC40000C22F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF89E81B296DBEC40000C22F /* Main.storyboard */; };
 		AF89E81F296DBEC40000C22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF89E81E296DBEC40000C22F /* Assets.xcassets */; };
 		AF89E822296DBEC40000C22F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF89E820296DBEC40000C22F /* LaunchScreen.storyboard */; };
+		AF89E82E296DC1ED0000C22F /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89E82D296DC1ED0000C22F /* LogoView.swift */; };
+		AF89E830296DC2180000C22F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89E82F296DC2180000C22F /* FeedViewController.swift */; };
+		AF89E836296DC3CF0000C22F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF89E835296DC3CF0000C22F /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF89E812296DBEC40000C22F /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF89E815296DBEC40000C22F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF89E817296DBEC40000C22F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF89E819296DBEC40000C22F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AF89E81C296DBEC40000C22F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF89E81E296DBEC40000C22F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF89E821296DBEC40000C22F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF89E823296DBEC40000C22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF89E82D296DC1ED0000C22F /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		AF89E82F296DC2180000C22F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF89E836296DC3CF0000C22F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +58,47 @@
 		AF89E814296DBEC40000C22F /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
-				AF89E815296DBEC40000C22F /* AppDelegate.swift */,
-				AF89E817296DBEC40000C22F /* SceneDelegate.swift */,
-				AF89E819296DBEC40000C22F /* ViewController.swift */,
-				AF89E81B296DBEC40000C22F /* Main.storyboard */,
+				AF89E82C296DC1CB0000C22F /* Views */,
+				AF89E82B296DC16C0000C22F /* Feed */,
+				AF89E82A296DC1240000C22F /* Application */,
+				AF89E829296DC0DE0000C22F /* Resourses */,
+			);
+			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		AF89E829296DC0DE0000C22F /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
 				AF89E81E296DBEC40000C22F /* Assets.xcassets */,
 				AF89E820296DBEC40000C22F /* LaunchScreen.storyboard */,
 				AF89E823296DBEC40000C22F /* Info.plist */,
 			);
-			path = InstagramClone;
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		AF89E82A296DC1240000C22F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AF89E815296DBEC40000C22F /* AppDelegate.swift */,
+				AF89E817296DBEC40000C22F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AF89E82B296DC16C0000C22F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AF89E82F296DC2180000C22F /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		AF89E82C296DC1CB0000C22F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF89E82D296DC1ED0000C22F /* LogoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +117,9 @@
 			dependencies = (
 			);
 			name = InstagramClone;
+			packageProductDependencies = (
+				AF89E835296DC3CF0000C22F /* SnapKit */,
+			);
 			productName = InstagramClone;
 			productReference = AF89E812296DBEC40000C22F /* InstagramClone.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +148,9 @@
 				Base,
 			);
 			mainGroup = AF89E809296DBEC40000C22F;
+			packageReferences = (
+				AF89E834296DC3CF0000C22F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = AF89E813296DBEC40000C22F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +167,6 @@
 			files = (
 				AF89E822296DBEC40000C22F /* LaunchScreen.storyboard in Resources */,
 				AF89E81F296DBEC40000C22F /* Assets.xcassets in Resources */,
-				AF89E81D296DBEC40000C22F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF89E81A296DBEC40000C22F /* ViewController.swift in Sources */,
 				AF89E816296DBEC40000C22F /* AppDelegate.swift in Sources */,
+				AF89E82E296DC1ED0000C22F /* LogoView.swift in Sources */,
+				AF89E830296DC2180000C22F /* FeedViewController.swift in Sources */,
 				AF89E818296DBEC40000C22F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AF89E81B296DBEC40000C22F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF89E81C296DBEC40000C22F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF89E820296DBEC40000C22F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +321,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8CW4G86PK2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstagramClone/Info.plist;
+				INFOPLIST_FILE = InstagramClone/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +348,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8CW4G86PK2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstagramClone/Info.plist;
+				INFOPLIST_FILE = InstagramClone/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF89E834296DC3CF0000C22F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF89E835296DC3CF0000C22F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF89E834296DC3CF0000C22F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF89E80A296DBEC40000C22F /* Project object */;
 }
