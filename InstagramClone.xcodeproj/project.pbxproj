@@ -14,6 +14,11 @@
 		AF89E82E296DC1ED0000C22F /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89E82D296DC1ED0000C22F /* LogoView.swift */; };
 		AF89E830296DC2180000C22F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF89E82F296DC2180000C22F /* FeedViewController.swift */; };
 		AF89E836296DC3CF0000C22F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF89E835296DC3CF0000C22F /* SnapKit */; };
+		AFB1445E296EA673006C31DD /* FeedItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB1445D296EA673006C31DD /* FeedItemType.swift */; };
+		AFB14460296EABCB006C31DD /* FeedStoriesCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB1445F296EABCB006C31DD /* FeedStoriesCellInfo.swift */; };
+		AFB14462296EAD76006C31DD /* FeedPostItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB14461296EAD76006C31DD /* FeedPostItemInfo.swift */; };
+		AFB14465296EBA3B006C31DD /* FeedStoriesSetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB14464296EBA3B006C31DD /* FeedStoriesSetCell.swift */; };
+		AFB14467296EBADF006C31DD /* FeedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB14466296EBADF006C31DD /* FeedPostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		AF89E823296DBEC40000C22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF89E82D296DC1ED0000C22F /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		AF89E82F296DC2180000C22F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		AFB1445D296EA673006C31DD /* FeedItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemType.swift; sourceTree = "<group>"; };
+		AFB1445F296EABCB006C31DD /* FeedStoriesCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoriesCellInfo.swift; sourceTree = "<group>"; };
+		AFB14461296EAD76006C31DD /* FeedPostItemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostItemInfo.swift; sourceTree = "<group>"; };
+		AFB14464296EBA3B006C31DD /* FeedStoriesSetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoriesSetCell.swift; sourceTree = "<group>"; };
+		AFB14466296EBADF006C31DD /* FeedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				AF89E82F296DC2180000C22F /* FeedViewController.swift */,
+				AFB1445D296EA673006C31DD /* FeedItemType.swift */,
+				AFB1445F296EABCB006C31DD /* FeedStoriesCellInfo.swift */,
+				AFB14461296EAD76006C31DD /* FeedPostItemInfo.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -96,9 +109,19 @@
 		AF89E82C296DC1CB0000C22F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AFB14463296EB719006C31DD /* Cells */,
 				AF89E82D296DC1ED0000C22F /* LogoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AFB14463296EB719006C31DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AFB14464296EBA3B006C31DD /* FeedStoriesSetCell.swift */,
+				AFB14466296EBADF006C31DD /* FeedPostCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB14462296EAD76006C31DD /* FeedPostItemInfo.swift in Sources */,
 				AF89E816296DBEC40000C22F /* AppDelegate.swift in Sources */,
 				AF89E82E296DC1ED0000C22F /* LogoView.swift in Sources */,
 				AF89E830296DC2180000C22F /* FeedViewController.swift in Sources */,
+				AFB14465296EBA3B006C31DD /* FeedStoriesSetCell.swift in Sources */,
 				AF89E818296DBEC40000C22F /* SceneDelegate.swift in Sources */,
+				AFB14467296EBADF006C31DD /* FeedPostCell.swift in Sources */,
+				AFB1445E296EA673006C31DD /* FeedItemType.swift in Sources */,
+				AFB14460296EABCB006C31DD /* FeedStoriesCellInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
