@@ -70,8 +70,8 @@
 		AF89E814296DBEC40000C22F /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
-				AF89E82C296DC1CB0000C22F /* Views */,
 				AF89E82B296DC16C0000C22F /* Feed */,
+				AF89E82C296DC1CB0000C22F /* Views */,
 				AF89E82A296DC1240000C22F /* Application */,
 				AF89E829296DC0DE0000C22F /* Resourses */,
 			);

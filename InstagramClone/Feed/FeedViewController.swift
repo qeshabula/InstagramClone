@@ -25,7 +25,8 @@ class FeedViewController: UIViewController {
             FeedStoriesItemCellInfo(image: UIImage(named: "dog")!, username: "user123", isAddButtonVisible: false, isNewStory: false),
             FeedStoriesItemCellInfo(image: UIImage(named: "dog")!, username: "user123", isAddButtonVisible: false, isNewStory: false),
             FeedStoriesItemCellInfo(image: UIImage(named: "dog")!, username: "user123", isAddButtonVisible: false, isNewStory: false)
-        ])
+        ]),
+        .post(FeedPostItemInfo(userImage: UIImage(named: "dog")!, username: "Some_dog", postSubtitle: "Sponsored", postImage: UIImage(named: "dog")!, numberOfLikes: 431, comment: CommentShortInfo(username: "Another_dog", commentText: "Tupoi it")))
     ]
 }
 
@@ -36,6 +37,7 @@ private extension FeedViewController {
         navigationItem.leftBarButtonItems = makeLeftBarButtonItems()
         navigationItem.rightBarButtonItems = makeRightBarButtonItems()
         tableView.dataSource = self
+        tableView.separatorColor = .clear
         tableView.register(FeedStoriesSetCell.self, forCellReuseIdentifier: String(describing: FeedStoriesSetCell.self))
         tableView.register(FeedPostCell.self, forCellReuseIdentifier: String(describing: FeedPostCell.self))
         view.addSubview(tableView)

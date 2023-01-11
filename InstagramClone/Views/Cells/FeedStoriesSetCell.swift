@@ -17,11 +17,17 @@ class FeedStoriesSetCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        initialize()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private enum UIConstants {
+        static let collectionViewHeight: CGFloat = 106
+        static let cellWidth: CGFloat = 72
+        static let cellHeight: CGFloat = 98
     }
     
     private var collectionView: UICollectionView!
@@ -32,14 +38,22 @@ class FeedStoriesSetCell: UITableViewCell {
 private extension FeedStoriesSetCell {
     func initialize() {
         let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(StoriesItemCell.self, forCellWithReuseIdentifier: String(describing: StoriesItemCell.self))
         collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.showsHorizontalScrollIndicator = false
+        contentView.addSubview(collectionView)
+        collectionView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+            make.height.equalTo(UIConstants.collectionViewHeight)
+        }
     }
 }
 
 extension FeedStoriesSetCell: UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         items.count
     }
     
@@ -49,4 +63,10 @@ extension FeedStoriesSetCell: UICollectionViewDataSource {
         return cell
     }
     
+}
+
+extension FeedStoriesSetCell: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: UIConstants.cellWidth, height: UIConstants.cellHeight)
+    }
 }
