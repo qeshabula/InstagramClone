@@ -19,6 +19,7 @@
 		AFB14462296EAD76006C31DD /* FeedPostItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB14461296EAD76006C31DD /* FeedPostItemInfo.swift */; };
 		AFB14465296EBA3B006C31DD /* FeedStoriesSetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB14464296EBA3B006C31DD /* FeedStoriesSetCell.swift */; };
 		AFB14467296EBADF006C31DD /* FeedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB14466296EBADF006C31DD /* FeedPostCell.swift */; };
+		AFB14469296EC68E006C31DD /* StoriesItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB14468296EC68E006C31DD /* StoriesItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AFB14461296EAD76006C31DD /* FeedPostItemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostItemInfo.swift; sourceTree = "<group>"; };
 		AFB14464296EBA3B006C31DD /* FeedStoriesSetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoriesSetCell.swift; sourceTree = "<group>"; };
 		AFB14466296EBADF006C31DD /* FeedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostCell.swift; sourceTree = "<group>"; };
+		AFB14468296EC68E006C31DD /* StoriesItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				AFB14464296EBA3B006C31DD /* FeedStoriesSetCell.swift */,
 				AFB14466296EBADF006C31DD /* FeedPostCell.swift */,
+				AFB14468296EC68E006C31DD /* StoriesItemCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				AF89E816296DBEC40000C22F /* AppDelegate.swift in Sources */,
 				AF89E82E296DC1ED0000C22F /* LogoView.swift in Sources */,
 				AF89E830296DC2180000C22F /* FeedViewController.swift in Sources */,
+				AFB14469296EC68E006C31DD /* StoriesItemCell.swift in Sources */,
 				AFB14465296EBA3B006C31DD /* FeedStoriesSetCell.swift in Sources */,
 				AF89E818296DBEC40000C22F /* SceneDelegate.swift in Sources */,
 				AFB14467296EBADF006C31DD /* FeedPostCell.swift in Sources */,
